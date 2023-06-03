@@ -29,16 +29,16 @@ function Header() {
         <div className="menuItems">
         <ul class="menu">
           <li>
-            <a href="#">MAJESTY 44FT</a>
+            <a href="www.google.com">MAJESTY 44FT</a>
           </li>
           <li>
-            <a href="#">MAJESTY 66FT</a>
+            <a href="www.google.com">MAJESTY 66FT</a>
           </li>
           <li>
-            <a href="#">PLEASURE BOAT</a>
+            <a href="www.google.com">PLEASURE BOAT</a>
           </li>
           <li>
-            <a href="#">CONTACT US</a>
+            <a href="www.google.com">CONTACT US</a>
           </li>
         </ul>
       </div>
