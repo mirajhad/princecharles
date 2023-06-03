@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import videoPath from "../../assets/yacht1.mp4";
+import logoHeader from "../../assets/logoHeader.png";
 function Header() {
   return (
     <div className="video-background">
@@ -11,7 +12,7 @@ function Header() {
 
       {/* Logo */}
       <div className="logo">
-        {/* Your logo component */}
+        <img className="logoHeader" src={logoHeader} alt="logo" />
       </div>
 
       {/* Menu */}
