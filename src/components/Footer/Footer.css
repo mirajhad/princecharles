@@ -1,0 +1,13 @@
+.footer{
+    background-color: rgb(15, 25, 84);
+}
+.div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.line {
+    height: 1px;
+    background-color: white;
+  }
+  
