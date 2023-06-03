@@ -2,7 +2,16 @@ import React from "react";
 import "./Header.css";
 import videoPath from "../../assets/yacht1.mp4";
 import logoHeader from "../../assets/logoHeader.png";
+import { useNavigate } from "react-router-dom";
+
+
 function Header() {
+  const navigate = useNavigate();
+
+  const HandleRoute = () => {
+    navigate("/Booking");
+  }
+  
   return (
     <div className="video-background">
       {/* Video source */}
@@ -20,24 +29,25 @@ function Header() {
         <div className="menuItems">
         <ul class="menu">
           <li>
-            <a href="#">MAJESTY 44FT</a>
+            <a href="www.google.com">MAJESTY 44FT</a>
           </li>
           <li>
-            <a href="#">MAJESTY 66FT</a>
+            <a href="www.google.com">MAJESTY 66FT</a>
           </li>
           <li>
-            <a href="#">PLEASURE BOAT</a>
+            <a href="www.google.com">PLEASURE BOAT</a>
           </li>
           <li>
-            <a href="#">CONTACT US</a>
+            <a href="www.google.com">CONTACT US</a>
           </li>
         </ul>
       </div>
     
 
-      {/* Other content */}
       <div className="content">
-        {/* Your other components and content */}
+        <div className="text-white h1">Luxury Yacht and Boat Services</div>
+        <button onClick={HandleRoute} className="btn text-white border mx-5">BOOK MAJESTY 44FT</button>
+        <button onClick={HandleRoute} className="btn text-white border">BOOK MAJESTY 66FT</button>
       </div>
     </div>
   );

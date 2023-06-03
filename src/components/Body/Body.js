@@ -7,21 +7,21 @@ import "./Body.css";
 function Body() {
   return (
     <div>
-      <div className="card">
-        <div className="row">
-          <div className="border">
-            <img src={boat1} alt="Card 2" />
+      <div>
+        <div class="row row-cols-2">
+          <div class="col ml-5">
+            <img className="w-50" src={boat1} alt="Card 2" />
           </div>
-          <div>
-            <img src={boat2} alt="Card 3" />
+          <div class="col">
+            <img className="w-50" src={boat2} alt="Card 3" />
+            
           </div>
-        </div>
-        <div className="row">
-          <div>
-            <img src={boat3} alt="Card 4" />
+          <div class="col">
+            {" "}
+            <img  className="w-50"src={boat3} alt="Card 4" />
           </div>
-          <div>
-            <img src={boat4} alt="Card 5" />
+          <div class="col">
+            <img  className="w-50" src={boat4} alt="Card 5" />
           </div>
         </div>
       </div>
