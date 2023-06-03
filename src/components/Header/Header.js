@@ -1,12 +1,23 @@
 import React from "react";
 import "./Header.css";
 import videoPath from "../../assets/yacht1.mp4";
+import logoHeader from "../../assets/logoHeader.png";
 function Header() {
   return (
-    <div className="main">
-      <video  src={videoPath} autoPlay loop muted/>
-        
-      <div className="content">
+    <div className="video-background">
+      {/* Video source */}
+      <video autoPlay muted loop>
+        <source src={videoPath} type="video/mp4" />
+      </video>
+
+      {/* Logo */}
+      <div className="logo">
+        <img className="logoHeader" src={logoHeader} alt="logo" />
+      </div>
+
+      {/* Menu */}
+      
+        <div className="menuItems">
         <ul class="menu">
           <li>
             <a href="#">MAJESTY 44FT</a>
@@ -22,17 +33,11 @@ function Header() {
           </li>
         </ul>
       </div>
+    
 
-      <div className="servicesTags">
-        <div className="servicesText">Luxury Yacht and Boat Services</div>
-        <div className="servicesBtn">
-          <div className="majesty44">
-            <button>MAJESTY 44FT</button>
-          </div>
-          <div className="majesty66">
-            <button>MAJESTY 66FT</button>
-          </div>
-        </div>
+      {/* Other content */}
+      <div className="content">
+        {/* Your other components and content */}
       </div>
     </div>
   );
